@@ -1,0 +1,71 @@
+{
+  "name": "CH4MI-MD",
+  "description": "CH4MI-MD Whatsapp bot © Cʜ4ᴍɪ-ᴍᴅ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴄʜ4ᴍɪ ʙᴏʏ · · ·",
+  "logo": "https://i.ibb.co/xXZZQrk/a0cbc8b9a3873386.jpg",
+  "keywords": ["bot"],
+  "success_url": "/",
+
+    "stack": "container",
+  "env": {
+    "SESSION_ID": {
+      "description": "Put the session-id here.",
+      "required": true,
+      "value": "public"
+    },  
+    
+    "MODE": {
+      "description": "private,inbox,group,public",
+      "required": true,
+      "value": "public"
+   },
+    
+    "PREFIX": {
+      "description": "#,!,/,$",
+      "required": true,
+      "value": "."
+    },
+    
+    "AUTO_VOICE": {
+      "description": "Auto send voice message",
+      "required": true,
+      "value": "true"
+    },
+    
+    "AUTO_REPLY": {
+      "description": "Auto reply message",
+      "required": true,
+      "value": "true"
+    },
+    
+    "AUTO_REACT": {
+      "description": "Auto react massage",
+      "required": true,
+      "value": "false"
+    },
+    
+    "AUTO_READ_STATUS": {
+      "description": "Just Now reading status",
+      "required": true,
+      "value": "true"
+    },
+    
+    "ANTI_BAD": {
+      "description": "Bad words remove",
+      "required": true,
+      "value": "false"
+    },
+    
+    "ANTI_LINK": {
+      "description": "Anti link remove",
+      "required": true,
+      "value": "false"
+    }
+},
+
+     "buildpacks": [
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+        }
+     ],
+  "stack": "heroku-24"
+}
